@@ -6,7 +6,7 @@
   * Pedro Gabriel Serodio Sales
  
 # Description
-Repository of activities carried out during the INF1608 - Análise Numérica course at PUC-Rio 2024.2
+Repository of activities carried out during the INF1608 - Análise Numérica course at PUC-Rio 2024.2  
 Labs 07 to 11 + Project will be uploaded after the end of semester
 
 # Projects / Labs
