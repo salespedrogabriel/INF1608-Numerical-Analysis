@@ -92,7 +92,7 @@ double ajuste_parabola(int n, double* px, double* py, double* a, double* b, doub
 ***************************************************************************/
 
 /***************************************************************************/
-/*  Start Function: ajuste_parabola - Ajusta uma cubica, y = a + bx + cx² + dx³,
+/*  Start Function: ajuste_cubica - Ajusta uma cubica, y = a + bx + cx² + dx³,
 a um conjunto de n pontos (pxi,pyi) fornecido. Determina os coeficientes 
 a, b, c, d, preenchendo os enderecos respectivos recebidos.
 ***************************************************************************/
