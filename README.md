@@ -15,8 +15,8 @@ Labs 07 to 11 + Project will be uploaded after the end of semester
 * [Lab 02: Function Roots](https://github.com/salespedrogabriel/INF1608-Analise-Numerica/tree/main/Lab%2002%3A%20Function%20Roots)
 * [Lab 03: Linear Systems](https://github.com/salespedrogabriel/INF1608-Analise-Numerica/tree/main/Lab%2003%3A%20Linear%20Systems)
 * [Lab 04: Polynomial Interpolation](https://github.com/salespedrogabriel/INF1608-Analise-Numerica/tree/main/Lab%2004%3A%20Polynomial%20Interpolation)
-* Lab 05: Least Squares Method
-* Lab 06: Numerical Differentiation and Integration
+* [Lab 05: Least Squares Method](https://github.com/salespedrogabriel/INF1608-Analise-Numerica/tree/main/Lab%2005%3A%20Least%20Squares%20Method)
+* [Lab 06: Numerical Differentiation and Integration](https://github.com/salespedrogabriel/INF1608-Analise-Numerica/tree/main/Lab%2006%3A%20Numerical%20Differentiation%20and%20Integration)
 * Lab 07: Ordinary Differential Equations
 * Lab 08: Physical Simulation
 * Lab 09: Iterative Methods
