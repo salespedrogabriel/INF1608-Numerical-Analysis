@@ -4,6 +4,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// gcc -Wall sistlinear.c matriz.c vetor.c main.c -o main
+// ./main
+
 static void avaliagauss (int n, double **A, double* b)
 {
   printf("Matriz A e vetor b: Antes de Gauss\n");
