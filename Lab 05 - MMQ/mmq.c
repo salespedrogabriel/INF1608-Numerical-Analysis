@@ -5,13 +5,6 @@
 #include "vetor.h"
 #include "sistlinear.h"
 
-/***************************************************************************
-* * * * * * * * * * * How to Run * * * * * * * * * * *
-***************************************************************************/
-// gcc -Wall mmq.c sistlinear.c matriz.c vetor.c main.c -o main
-// ./main
-/***************************************************************************/
-
 double mmq(int m, int n, double** A, double* b, double* x) {
     // Passo 1: Alocar a matriz transposta de A (T)
     double** T = mat_cria(n, m);
