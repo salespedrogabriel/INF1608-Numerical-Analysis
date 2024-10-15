@@ -5,6 +5,11 @@
 #include "vetor.h"
 #include "sistlinear.h"
 
+/***************************************************************************/
+/*  Start Function: mmq - Resolve o sistema A[m][n] * x[n] = b[m] pelo 
+metodo dos minimos quadrados
+***************************************************************************/
+
 double mmq(int m, int n, double** A, double* b, double* x) {
     // Passo 1: Alocar a matriz transposta de A (T)
     double** T = mat_cria(n, m);
@@ -43,6 +48,16 @@ double mmq(int m, int n, double** A, double* b, double* x) {
     return residual_norm;
 }
 
+/***************************************************************************/
+/*  End Function: mmq - Retorna a norma-2 do vetor residual
+***************************************************************************/
+
+/***************************************************************************/
+/*  Start Function: ajuste_parabola - Ajusta uma parabola, y = a + bx + cx²,
+a um conjunto de n pontos (pxi,pyi) fornecido. Determina os coeficientes 
+a, b, c, preenchendo os enderecos respectivos recebidos.
+***************************************************************************/
+
 double ajuste_parabola(int n, double* px, double* py, double* a, double* b, double* c) {
     // Passo 1: Criar a matriz A e o vetor de resultados b
     double** A = mat_cria(n, 3);  // n linhas, 3 colunas (1, x, x^2)
@@ -71,6 +86,16 @@ double ajuste_parabola(int n, double* px, double* py, double* a, double* b, doub
     
     return residual_norm; // Retorna a norma-2 do vetor residual
 }
+
+/***************************************************************************/
+/*  End Function: ajuste_parabola - Retorna a norma-2 do vetor residual
+***************************************************************************/
+
+/***************************************************************************/
+/*  Start Function: ajuste_parabola - Ajusta uma cubica, y = a + bx + cx² + dx³,
+a um conjunto de n pontos (pxi,pyi) fornecido. Determina os coeficientes 
+a, b, c, d, preenchendo os enderecos respectivos recebidos.
+***************************************************************************/
 
 double ajuste_cubica(int n, double* px, double* py, double* a, double* b, double* c, double* d) {
     // Passo 1: Criar a matriz de design A e o vetor de resultados b
@@ -103,6 +128,16 @@ double ajuste_cubica(int n, double* px, double* py, double* a, double* b, double
     
     return residual_norm; // Retorna a norma-2 do vetor residual
 }
+
+/***************************************************************************/
+/*  End Function: ajuste_cubica - Retorna a norma-2 do vetor residual
+***************************************************************************/
+
+/***************************************************************************/
+/*  Start Function: ajuste_exponencial - Ajusta uma exponencial, y = a*exp(b*x),
+a um conjunto de n pontos (pxi,pyi) fornecido. Determina os coeficientes 
+a, b, preenchendo os enderecos respectivos recebidos.
+***************************************************************************/
 
 double ajuste_exponencial_exp(int n, double* px, double* py, double* a, double* b) {
     // Passo 1: Criar a matriz de design A e o vetor de resultados Y
@@ -137,4 +172,8 @@ double ajuste_exponencial_exp(int n, double* px, double* py, double* a, double* 
     
     return residual_norm; // Retorna a norma-2 do vetor residual
 }
+
+/***************************************************************************/
+/*  End Function: ajuste_exponencial_exp - Retorna a norma-2 do vetor residual
+***************************************************************************/
 
