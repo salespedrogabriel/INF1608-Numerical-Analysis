@@ -3,6 +3,11 @@
 #include <math.h>
 #define PI 3.14159265358979
 
+/***************************************************************************
+*  Start Function: regular - Calcula as amostras xi, preenchendo o vetor
+xi, pre-alocado, passado como parametro
+***************************************************************************/
+
 void regular (int n, double a, double b, double* xi)
 {
     // error handle de n
@@ -26,6 +31,17 @@ void regular (int n, double a, double b, double* xi)
 
 }
 
+/***************************************************************************
+*  End Function: regular - retorna n amostras espaçadas regularmente no
+intervalo [a,b] onde xi[0] = a, xi[n-1] = b e os demais valores sao 
+regularmente distribuidos no intervalo.
+***************************************************************************/
+
+/***************************************************************************/
+/*  Start Function: chebyshev - Calcula as amostras xi, preenchendo o vetor
+xi, pre-alocado, passado como parametro
+***************************************************************************/
+
 void chebyshev (int n, double a, double b, double* xi)
 {
     // error handle de n
@@ -45,25 +61,51 @@ void chebyshev (int n, double a, double b, double* xi)
     }
 }
 
-// Função para calcular a diferença finita F[xi...xj]
-double diferença_finite(int i, int j, double* xi, double (*f)(double)) {
+/***************************************************************************
+*  End Function: chebyshev - retorna as n amostras de Chebyshev para a
+aproximacao de uma funcao qualquer, dentro do intervalo [a,b]
+***************************************************************************/
+
+/***************************************************************************/
+/*  Start Function: diferenca_finita - Calcula a diferenca finita F[xi...xj]
+***************************************************************************/
+
+double diferenca_finita(int i, int j, double* xi, double (*f)(double)) {
     if (i == j) {
         return f(xi[i]);
     } else {
-        double fi_1_j = diferença_finite(i + 1, j, xi, f);
-        double fi_j_1 = diferença_finite(i, j - 1, xi, f);
+        double fi_1_j = diferenca_finita(i + 1, j, xi, f);
+        double fi_j_1 = diferenca_finita(i, j - 1, xi, f);
         return (fi_1_j - fi_j_1) / (xi[j] - xi[i]);
     }
 }
 
-// Função para calcular os coeficientes b_i
+/***************************************************************************
+*  End Function: diferenca_finita 
+***************************************************************************/
+
+/***************************************************************************/
+/*  Start Function: coeficientes - Calcula os n coeficientes bi de acordo
+com o metodo de Diferencas Divididas de Newton utilizando a funcao auxiliar
+acima
+***************************************************************************/
+
 void coeficientes(int n, double* xi, double (*f)(double), double* bi) {
     for (int i = 0; i < n; i++) {
-        bi[i] = diferença_finite(0, i, xi, f);
+        bi[i] = diferenca_finita(0, i, xi, f);
     }
 }
 
-// Função para avaliar o polinômio interpolante de Newton em um ponto x
+/***************************************************************************
+*  End Function: coeficientes - Retorna o vetor bi, pre-alocado, com os 
+coeficientes calculados
+***************************************************************************/
+
+/***************************************************************************/
+/*  Start Function: avalia - Funcao para avaliar o polinomio interpolante
+de Newton em um ponto x dado
+***************************************************************************/
+
 double avalia(int n, double* xi, double* bi, double x) {
     double resultado = bi[0]; // Inicia o resultado com o primeiro coeficiente b0
     double produto = 1.0;
@@ -76,3 +118,7 @@ double avalia(int n, double* xi, double* bi, double x) {
 
     return resultado;
 }
+
+/***************************************************************************
+*  End Function: avalia
+***************************************************************************/
