@@ -7,6 +7,7 @@
  
 # Description
 Repository of activities carried out during the INF1608 - Análise Numérica course at PUC-Rio 2024.2
+Labs 07 to 11 + Project will be uploaded after the end of semester
 
 # Projects / Labs
 * [Lab 00: Vector and Matriz Representation](https://github.com/salespedrogabriel/INF1608-Analise-Numerica/tree/main/Lab%2000%3A%20Vector%20and%20Matriz%20Representation)
