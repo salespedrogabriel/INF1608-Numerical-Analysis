@@ -1,0 +1,8 @@
+it: iteracoes da bissecao, av: avaliacoes de f(x), usando "%.9f" para imprimir a raiz...
+Q1 e Q2 de -3 a +3
+  Q1: 0.839286757 it: 30 av: 32
+  Q2: Função não convergiu it: 0 av: 2
+Q1 de -5 a +5: 0.839286759 it: 30 av: 32
+Q3 de 0 a 150: 59.841044749 it: 34 av: 36
+Q3 de 0 a 250: 59.841044746 it: 35 av: 37
+Q3 de 0 a 50: Função não convergiu it: 0 av: 2
