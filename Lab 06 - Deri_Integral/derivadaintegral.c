@@ -2,33 +2,23 @@
 #include <stdlib.h>
 #include <math.h>
 
-// Protótipo da função que calcula a derivada numérica
+/***************************************************************************/
+/*  Start Function: derivada - Calcula a derivada numerica de uma funcao no 
+ponto x com passo h tendo como base o metodo de segunda ordem
+***************************************************************************/
+
 double derivada(double (*f)(double x), double x, double h) {
     return (f(x + h) - f(x - h)) / (2 * h);
 }
 
-// Protótipo da função que calcula a integral usando a regra de Simpson
-/*double simpson(double (*f)(double), double a, double b, int n) {
-    if (n % 2 != 0) {
-        printf("O número de subintervalos n deve ser par.\n");
-        return 0.0;
-    }
+/***************************************************************************/
+/*  End Function: derivada
+***************************************************************************/
 
-    double h = (b - a) / n; // Passo de integração
-    double integral = f(a) + f(b); // Começa com os extremos
-
-    for (int i = 1; i < n; i++) {
-        double x = a + i * h;
-        if (i % 2 == 0) {
-            integral += 2 * f(x); // Termos pares
-        } else {
-            integral += f(x); // Termos ímpares
-        }
-    }
-
-    integral *= (h / 3); // Multiplica pelo fator da regra de Simpson
-    return integral;
-}*/
+/***************************************************************************/
+/*  Start Function: simpson - Calcula a integral composta do intervalo de
+'a' ate 'b' considerando n passos de integracao
+***************************************************************************/
 
 double simpson(double (*f)(double), double a, double b, int n) {
     double h = (b - a) / n; // Passo
@@ -42,7 +32,15 @@ double simpson(double (*f)(double), double a, double b, int n) {
     return integral;
 }
 
-// Função auxiliar para a integração adaptativa
+/***************************************************************************/
+/*  End Function: simpson
+***************************************************************************/
+
+/***************************************************************************/
+/*  Start Function: simpson_adaptativo_helper - Auxiliar para a integracao
+adaptativa de simpson
+***************************************************************************/
+
 double simpson_adaptativo_helper(double (*f)(double), double a, double b, double tol) {
     double c = (a + b) / 2; // Ponto médio
     double S_ab = simpson(f, a, b, 1); // Integral no intervalo [a, b]
@@ -62,10 +60,26 @@ double simpson_adaptativo_helper(double (*f)(double), double a, double b, double
     }
 }
 
-// Função principal que chama o helper
+/***************************************************************************/
+/*  End Function: simpson_adaptativo_helper
+***************************************************************************/
+
+/***************************************************************************/
+/*  Start Function: simpsonadaptativo - Apenas chama o helper
+***************************************************************************/
+
 double simpsonadaptativo(double (*f)(double), double a, double b, double tol) {
     return simpson_adaptativo_helper(f, a, b, tol);
 }
+
+/***************************************************************************/
+/*  End Function: simpsonadaptativo
+***************************************************************************/
+
+/***************************************************************************/
+/*  Start Function: quadraturagauss2 - Calcula a integral usando a quadratura
+de Gauss com 2 pontos
+***************************************************************************/
 
 // Função que calcula a integral usando a quadratura de Gauss com 2 pontos
 double quadraturagauss2(double (*f)(double), double a, double b) {
@@ -79,3 +93,7 @@ double quadraturagauss2(double (*f)(double), double a, double b) {
     double integral = (b - a) / 2 * (w1 * f(x1) + w2 * f(x2));
     return integral;
 }
+
+/***************************************************************************/
+/*  End Function: quadraturagauss2
+***************************************************************************/
