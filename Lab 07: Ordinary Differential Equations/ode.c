@@ -3,7 +3,11 @@
 #include <stdio.h>
 #include <math.h>
 
-// Protótipo da função RungeKutta
+
+/***************************************************************************/
+/*  Start Function: RungeKutta - Método Runge Kutta com passo constante
+***************************************************************************/
+
 double RungeKutta(double t0, double t1, double y0, double (*f)(double t, double y), double h) {
     // Número de passos necessários
     
@@ -31,6 +35,14 @@ double RungeKutta(double t0, double t1, double y0, double (*f)(double t, double 
     
     return y;
 }
+
+/***************************************************************************/
+/*  End Function: RungeKutta - Retorna o valor no tempo final y(t1)
+***************************************************************************/
+
+/***************************************************************************/
+/*  Start Function: RungeKuttaAdapt - Método Runge Kutta com passo adaptativo
+***************************************************************************/
 
 double RungeKuttaAdapt(double t0, double t1, double y0, double (*f)(double t, double y), double tol) {
     double h = 1e-7; // passo inicial
@@ -99,5 +111,11 @@ double RungeKuttaAdapt(double t0, double t1, double y0, double (*f)(double t, do
         //printf("h:%g\n",h);
     }
 
+    
+
     return y;
 }
+
+/***************************************************************************/
+/*  End Function: RungeKuttaAdapt - Retorna o valor no tempo final y(t1)
+***************************************************************************/
