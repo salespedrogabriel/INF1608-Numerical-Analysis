@@ -84,8 +84,10 @@ double RungeKuttaAdapt(double t0, double t1, double y0, double (*f)(double t, do
           
         }
         
-        /* Observação
-        
+        /***************************************************************************/
+        /* * * * * * * * * * * * * * * * Observação * * * * * * * * * * * * * * * *
+        ***************************************************************************/
+        /*
           Também é possivel calcular o y1 e o y2 da forma:
         
           double y1 = RungeKutta(t,t+h,y,f,h);
