@@ -18,6 +18,6 @@ Repository of activities carried out during the INF1608 - Análise Numérica cou
 * [Lab 06: Numerical Differentiation and Integration](https://github.com/salespedrogabriel/INF1608-Analise-Numerica/tree/main/Lab%2006%3A%20Numerical%20Differentiation%20and%20Integration)
 * [Lab 07: Ordinary Differential Equations](https://github.com/salespedrogabriel/INF1608-Analise-Numerica/tree/main/Lab%2007%3A%20Ordinary%20Differential%20Equations)
 * [Lab 08: Physical Simulation](https://github.com/salespedrogabriel/INF1608-Analise-Numerica/tree/main/Lab%2008%3A%20Physical%20Simulation)
-* Lab 09: Iterative Methods
-* Lab 10: Conjugate Gradient Method
-* Lab 11: Unconstrained Optimization
+* [Lab 09: Iterative Methods](https://github.com/salespedrogabriel/INF1608-Analise-Numerica/tree/main/Lab%2009%3A%20Iterative%20Methods)
+* [Lab 10: Conjugate Gradient Method](https://github.com/salespedrogabriel/INF1608-Analise-Numerica/tree/main/Lab%2010%3A%20Conjugate%20Gradient%20Method)
+* [Lab 11: Unconstrained Optimization](https://github.com/salespedrogabriel/INF1608-Analise-Numerica/tree/main/Lab%2011%3A%20Unconstrained%20Optimization)
