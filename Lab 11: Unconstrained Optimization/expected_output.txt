@@ -1,0 +1,20 @@
+MSA:
+x*x + sin(x)
+msa  [a =  -0.5, b =   0.5]: it = 23, xmin =  -0.450186, fevals: 25
+msa  [a =  -1.5, b =   1.5]: it = 25, xmin =  -0.450185, fevals: 27
+x^6 - 11 x^3 + 17 x^2 - 7 x + 1
+msa  [a =  -0.5, b =   0.5]: it = 23, xmin =   0.283653, fevals: 25
+msa  [a =  -0.7, b =   0.7]: it = 24, xmin =   0.283646, fevals: 26
+msa  [a =     1, b =     2]: it = 23, xmin =    1.06452, fevals: 25
+msa  [a =     1, b =     8]: it = 27, xmin =    1.06452, fevals: 29
+MIPS:
+x*x + sin(x)
+mips [r =     0, d =   0.5]: it =  5, xmin =  -0.450178, fevals:  8
+mips [r =   1.5, d =     1]: it =  6, xmin =   -0.45065, fevals:  9
+mips [r =   1.2, d =   0.2]: it =  6, xmin =  -0.450363, fevals:  9
+x^6 - 11 x^3 + 17 x^2 - 7 x + 1
+mips [r =     0, d =   0.5]: it =  5, xmin =   0.284338, fevals:  8
+mips [r =   0.6, d =  0.01]: it =  8, xmin =   0.283629, fevals: 11
+mips [r =     1, d =   0.5]: it = 12, xmin =   0.999904, fevals: 15
+mips [r =   1.4, d =   0.1]: it = 12, xmin =    1.06463, fevals: 15
+mips [r =     1, d = 1e-07]: it =  3, xmin =          1, fevals:  6
