@@ -1,0 +1,6 @@
+Nota: 6.0
+Desc:
+* Funcao 'simula' em x : -1.00
+* Funcao 'simula' em y : -1.00
+* Funcao 'simula' em x (2) : -1.00
+* Funcao 'simula' em y (2) : -1.00
