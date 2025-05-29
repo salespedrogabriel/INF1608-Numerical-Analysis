@@ -1,4 +1,4 @@
-# [INF1608] Análise Numérica
+# [INF1608] Numerical Analysis
 * **Course:** INF1608
 * **Semester:** 2024.2
 * **Supervisor:** Leonardo Quatrin Campagnolo
