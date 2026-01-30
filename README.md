@@ -6,7 +6,7 @@
   * Pedro Gabriel Serodio Sales
  
 # Description
-Repository of activities carried out during the INF1608 - Análise Numérica course at PUC-Rio 2024.2  
+Repository of activities carried out during the INF1608 - Numerical Analysis course at PUC-Rio 2024.2  
 
 # Projects / Labs
 * [Lab 00: Vector and Matriz Representation](https://github.com/salespedrogabriel/INF1608-Analise-Numerica/tree/main/%5BLab%2000%5D%20Vector%20and%20Matriz%20Representation) 
