@@ -21,3 +21,12 @@ Repository of activities carried out during the INF1608 - Numerical Analysis cou
 * [Lab 09: Iterative Methods](https://github.com/salespedrogabriel/INF1608-Analise-Numerica/tree/main/%5BLab%2009%5D%20Iterative%20Methods)
 * [Lab 10: Conjugate Gradient Method](https://github.com/salespedrogabriel/INF1608-Analise-Numerica/tree/main/%5BLab%2010%5D%20Conjugate%20Gradient%20Method) 
 * [Lab 11: Unconstrained Optimization](https://github.com/salespedrogabriel/INF1608-Analise-Numerica/tree/main/%5BLab%2011%5D%20Unconstrained%20Optimization) 
+
+## Academic Integrity Notice
+The code in this repository represents my solutions to the Numerical Analysis laboratory exercises.
+
+* Use it to **learn**, not to **copy**
+* Understand the logic before applying similar approaches
+* Remember that struggling with a problem is part of the learning process
+
+*Current students, respect your course's academic integrity policies.*
