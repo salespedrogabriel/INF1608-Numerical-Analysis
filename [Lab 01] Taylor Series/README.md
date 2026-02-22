@@ -28,7 +28,7 @@ where $n$ represents the number of terms in the polynomial and $c_i = f^{[i]}(x_
 
 1.  Write a function that evaluates a Taylor polynomial given its coefficient vector. The function receives the number of terms $n$, the coefficient vector $c$, the value $x_0$, and the value $x$ at which the polynomial should be evaluated, returning the computed value. The function prototype should be:
 
-    ```c
+    ```
     double avalia_taylor (int n, double *c, double x0, double x);
     ```
 
@@ -36,11 +36,17 @@ where $n$ represents the number of terms in the polynomial and $c_i = f^{[i]}(x_
 
 2.  The illustration below shows the Taylor polynomial approximating the function $\sin x$ around the point $x_0 = 0$. Note that the polynomial coefficients follow a simple construction rule: 0, 1, 0, -1, 0, 1, 0, -1, ...
 
+
     Based on this observation, write a function that evaluates the Taylor polynomial approximating the $\sin x$ function around $x_0 = 0$. The function receives as a parameter the number of terms $n$ to be used in the approximation, returning the approximate value of the function at point $x$, using the function from the previous item.
 
-    ```c
-    double avalia_seno (int n, double x);
+    <div align="center">
+        <img src="https://github.com/salespedrogabriel/INF1608-Numerical-Analysis/blob/main/assets/graphs_taylor.png" width="500">
+    </div>
+
+
     ```
+    double avalia_seno (int n, double x);
+     ```
 
 Using the `sin` function from the standard `math.h` library, write a test module `main.c` to evaluate the approximations in calculating $\sin(x)$ for $x = \{\pi/12, \pi/9, \pi/7, \pi/4, \pi/3\}$, using different numbers of terms. Note that the error decreases as the number of terms increases, always being smaller than the maximum remainder indicated by Taylor's Theorem.
 
@@ -51,4 +57,4 @@ Using the `sin` function from the standard `math.h` library, write a test module
 
 Group the function prototypes in a "taylor.h" module, the implementations in a "taylor.c" module, and the test in the "main.c" module.
 
-**Submission:** The source code for this lab assignment (i.e., the files "taylor.h", "taylor.c", and "main.c", not zipped) must be submitted via the course page on EAD by 23:59 on Friday, 08/23.
+**Submission:** The source code for this lab assignment (i.e., the files "taylor.h", "taylor.c", and "main.c", **not** zipped) must be submitted via the course page on EAD by 23:59 on Friday, 08/23.
