@@ -31,7 +31,7 @@
     </div>
     
 
-    where $g = 9.8 \, m/s^2$. For a skydiver with a drag coefficient $c = 15 \, Kg/s$, calculate the mass $m$ so that the velocity is $v = 35 \, m/s$ at $t = 9 \, s$.
+    where $g = 9.8 \ m/s^2$. For a skydiver with a drag coefficient $c = 15 \ Kg/s$, calculate the mass $m$ so that the velocity is $v = 35 \ m/s$ at $t = 9 \ s$.
 
 Organize your code as follows. The file "raiz.c" must contain the implementation of the `bissecao` function, with its respective prototype in the file "raiz.h". The file "main.c" must contain the tests performed.
 
