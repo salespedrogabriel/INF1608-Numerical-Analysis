@@ -28,7 +28,7 @@ void regular(int n, double a, double b, double* xi);
 Implement a function that returns $$n$$ Chebyshev samples for approximating any function within the interval $$[a, b]$$:
 
 <div align="center">
-    <<h3>$$x_i =  \frac{b-a}{2} cos\frac{βπ}{2n} + \frac{a+b}{2}, β = 1, 3, 5, ..., 2n - 1$$</h3>
+    <h3>$$x_i =  \frac{b-a}{2} cos\frac{βπ}{2n} + \frac{a+b}{2}, β = 1, 3, 5, ..., 2n - 1$$</h3>
 </div>
 
 The function should compute the samples $$x_i$$, filling the pre-allocated vector passed as a parameter, following the prototype:
